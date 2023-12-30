@@ -1,0 +1,8 @@
+@media screen and (max-width: 779px) {
+    .login{
+        width: 90%;
+    }
+    .signup{
+        width: 90%;
+    }
+}
