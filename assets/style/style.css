@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: #24353F;
+}
+@font-face {
+    font-family: "Titillium";
+    src: url(../fonts/TitilliumWeb-SemiBold.ttf);
+}
+.font-titillium{
+    font-family: "Titillium";
+}
+.login{
+    box-shadow: black -5px 2px 54px -9px;
+    width: 60%;
+}
+h1{
+    color: #17A2B8;
+}
+.form-control::placeholder{
+    color: rgba(245, 245, 245, 0.514);
+}
+.signup{
+    box-shadow: black -5px 2px 54px -9px;
+    width: 60%;
+}

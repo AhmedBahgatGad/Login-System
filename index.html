@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/all.min.css">
+    <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/mediaquery.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="login" class="login container p-5 my-5 d-none">
+        <h1 class="font-titillium text-center">Smart Login System</h1>
+        <div class="my-4">
+            <form class="my-3">
+                <input id="email" type="email" class="my-3 form-control bg-transparent text-white placeholder-wave" placeholder="Enter Your Email">
+                <input id="pass" type="password" class="my-3 form-control bg-transparent text-white placeholder-wave" placeholder="Enter Your Password">
+            </form>
+            <button id="loginBtn" class="form-control btn btn-outline-info my-3">Login</button>
+            <p class="text-center text-white">Don’t have an account? <a id="goSignBtn" href="#" class="text-decoration-none text-white">Sign Up</a></p>
+        </div>
+    </div>
+    <div id="signUp" class="signup container p-5 my-5 d-block">
+        <h1 class="font-titillium text-center">Smart Login System</h1>
+        <div class="my-4">
+            <form class="my-3">
+                <input id="userName" type="text" class="my-3 form-control bg-transparent text-white placeholder-wave" placeholder="Enter Your Name">
+                <input id="userEmail" type="email" class="my-3 form-control bg-transparent text-white placeholder-wave" placeholder="Enter Your Email">
+                <p id="userEmailAlert" class="d-none text-danger">name@example.com</p>
+                <input id="userPass" type="password" class="userpass my-3 form-control bg-transparent text-white placeholder-wave" placeholder="Enter Your Password">
+                <p id="userPasswordAlert" class="d-none text-danger m-0">you must strenth your password, Start with capital letter from 5 to 15 characters</p>
+            </form>
+            <p class="text-success d-none" id="confirmMsg">Success</p>
+            <p class="text-danger d-none mb-0" id="accountExistMsg">this account is exist ! Try another one.</p>
+            <p class="text-danger d-none mb-0" id="tryAgainMsg">signUp failed ! Try again</p>
+            <button id="signUpBtn" class="form-control btn btn-outline-info my-3">Sign Up</button>
+            <p class="text-center text-white">You have an account? <a id="goLoginBtn" href="#" class="text-decoration-none text-white">Sign in</a></p>
+        </div>
+    </div>
+    <div id="home" class="d-none">
+        <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+            <div class="container">
+              <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto py-3 mb-2 mb-lg-0">
+                    <button id="logOutBtn" class="btn btn-outline-warning" type="submit">Log Out</button>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div class="signup container p-5 my-5">
+            <h1 class="font-titillium text-center" id="welcome">Welcome ahmed</h1>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
